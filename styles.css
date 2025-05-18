@@ -1,0 +1,73 @@
+body {
+    background-color: #00FFFF; /* Bright cyan background */
+    font-family: 'Comic Sans MS', cursive; /* Retro font */
+    color: #FF00FF; /* Bright magenta text */
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #FFFF00; /* Bright yellow container */
+    border: 5px dashed #FF0000; /* Red dashed border */
+}
+
+h1 {
+    font-size: 48px;
+    color: #FF00FF; /* Magenta */
+    text-shadow: 2px 2px #0000FF; /* Blue shadow for retro effect */
+}
+
+h2 {
+    font-size: 32px;
+    color: #FF0000; /* Red */
+}
+
+p {
+    font-size: 18px;
+    color: #0000FF; /* Blue */
+}
+
+.story, .donation-form, .donation-counter {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #00FF00; /* Bright green */
+    border: 3px solid #FF00FF; /* Magenta border */
+}
+
+.donation-form input, .donation-form button {
+    font-family: 'Comic Sans MS', cursive;
+    font-size: 16px;
+    padding: 10px;
+    margin: 5px;
+    border: 2px solid #FF0000; /* Red border */
+}
+
+.donation-form button {
+    background-color: #FFFF00; /* Yellow */
+    color: #FF00FF; /* Magenta */
+    cursor: pointer;
+}
+
+.donation-form button:hover {
+    background-color: #FF00FF; /* Magenta */
+    color: #FFFF00; /* Yellow */
+}
+
+.spinning-dollar, .under-construction {
+    width: 50px;
+    height: 50px;
+}
+
+footer {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #FF0000; /* Red */
+}
+
+footer img {
+    vertical-align: middle;
+}
