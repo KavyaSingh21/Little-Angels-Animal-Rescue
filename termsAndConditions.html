@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms and Conditions - Sahil's Dog Feeding Mission</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
+    <style>
+        :root {
+            --primary-color: #8b4513;
+            --secondary-color: #a0522d;
+            --background-color: #ffffe0;
+            --accent-color: #ffdab9;
+            --text-color: #603813;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Courier Prime', monospace;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            border: 8px solid var(--primary-color);
+            min-height: 100vh;
+            position: relative;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            text-align: center;
+            border-bottom: 4px dashed var(--primary-color);
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        
+        h1, h2, h3 {
+            color: var(--secondary-color);
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+        
+        h1 {
+            font-size: 36px;
+            text-shadow: 2px 2px var(--accent-color);
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            margin: 30px 0 15px 0;
+            font-size: 24px;
+            letter-spacing: 2px;
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 5px;
+        }
+
+        h3 {
+            margin: 20px 0 10px 0;
+            font-size: 18px;
+            letter-spacing: 1px;
+        }
+        
+        .retro-box {
+            background-color: var(--accent-color);
+            border: 4px solid var(--primary-color);
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+        
+        .retro-box:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(139, 69, 19, 0.2);
+        }
+        
+        .blink {
+            animation: blinker 1.5s ease-in-out infinite;
+        }
+        
+        @keyframes blinker {
+            50% { opacity: 0.5; }
+        }
+        
+        .btn {
+            background-color: var(--secondary-color);
+            color: var(--background-color);
+            font-family: 'Courier Prime', monospace;
+            font-weight: bold;
+            padding: 12px 20px;
+            border: none;
+            cursor: pointer;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            display: inline-block;
+            margin-top: 15px;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+        
+        .btn:hover {
+            background-color: var(--primary-color);
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(139, 69, 19, 0.4);
+        }
+        
+        footer {
+            text-align: center;
+            border-top: 4px dashed var(--primary-color);
+            margin-top: 30px;
+            padding-top: 20px;
+            font-size: 14px;
+        }
+        
+        .terms-section {
+            margin-bottom: 25px;
+            padding: 15px;
+            background-color: rgba(255, 218, 185, 0.3);
+            border-left: 4px solid var(--secondary-color);
+            border-radius: 4px;
+        }
+
+        .terms-section p {
+            margin-bottom: 10px;
+        }
+
+        .terms-section ul, .terms-section ol {
+            margin-left: 20px;
+            margin-bottom: 10px;
+        }
+
+        .terms-section li {
+            margin-bottom: 5px;
+        }
+
+        .highlight {
+            background-color: #ffff99;
+            padding: 2px 4px;
+            border-radius: 2px;
+            font-weight: bold;
+        }
+
+        .warning-box {
+            background-color: #ffe4e1;
+            border: 3px solid #ff6b6b;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        .contact-info {
+            background-color: #e6f3ff;
+            border: 3px solid #4a90e2;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+
+        .last-updated {
+            text-align: center;
+            font-style: italic;
+            color: var(--secondary-color);
+            background-color: rgba(139, 69, 19, 0.1);
+            padding: 10px;
+            border-radius: 4px;
+            margin: 20px 0;
+        }
+
+        .back-to-home {
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .toc {
+            background-color: var(--background-color);
+            border: 3px solid var(--primary-color);
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+
+        .toc ul {
+            list-style-type: none;
+            margin-left: 0;
+        }
+
+        .toc li {
+            margin-bottom: 8px;
+        }
+
+        .toc a {
+            color: var(--secondary-color);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .toc a:hover {
+            color: var(--primary-color);
+            text-decoration: underline;
+        }
+
+        .back-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: var(--secondary-color);
+            color: var(--background-color);
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            cursor: pointer;
+            opacity: 0;
+            transition: all 0.3s ease;
+            z-index: 1000;
+        }
+
+        .back-to-top.visible {
+            opacity: 0.8;
+        }
+
+        .back-to-top:hover {
+            opacity: 1;
+            transform: scale(1.1);
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 28px;
+            }
+
+            .container {
+                padding: 15px;
+            }
+
+            body {
+                border-width: 5px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 24px;
+            }
+
+            .terms-section {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Terms and Conditions</h1>
+            <p><i>~ Sahil's Dog Feeding Mission ~</i></p>
+            <p><strong>Please read these terms carefully before using our services</strong></p>
+        </header>
+
+        <div class="last-updated">
+            <i class="fas fa-calendar-alt"></i> Last Updated: January 15, 2025
+        </div>
+
+        <div class="back-to-home">
+            <a href="index.html" class="btn"><i class="fas fa-home"></i> Back to Home</a>
+        </div>
+
+        <div class="toc">
+            <h3>Table of Contents</h3>
+            <ul>
+                <li><a href="#acceptance">1. Acceptance of Terms</a></li>
+                <li><a href="#about-mission">2. About Our Mission</a></li>
+                <li><a href="#donations">3. Donations and Payments</a></li>
+                <li><a href="#use-of-funds">4. Use of Funds</a></li>
+                <li><a href="#website-use">5. Website Use</a></li>
+                <li><a href="#privacy">6. Privacy and Data</a></li>
+                <li><a href="#intellectual-property">7. Intellectual Property</a></li>
+                <li><a href="#disclaimers">8. Disclaimers</a></li>
+                <li><a href="#limitation-liability">9. Limitation of Liability</a></li>
+                <li><a href="#communications">10. Communications</a></li>
+                <li><a href="#changes">11. Changes to Terms</a></li>
+                <li><a href="#contact">12. Contact Information</a></li>
+            </ul>
+        </div>
+
+        <div class="warning-box">
+            <i class="fas fa-exclamation-triangle"></i> <strong>Important Notice:</strong> By accessing this website or making a donation, you agree to be bound by these Terms and Conditions. If you do not agree, please do not use our services.
+        </div>
+
+        <div class="terms-section" id="acceptance">
+            <h2>1. Acceptance of Terms</h2>
+            <p>Welcome to Sahil's Dog Feeding Mission! These Terms and Conditions ("Terms") govern your use of our website and services. By accessing our website, making donations, or interacting with our mission in any way, you acknowledge that you have read, understood, and agree to be bound by these Terms.</p>
+            <p>If you are under 18 years old, you must have permission from a parent or guardian to use our services or make donations.</p>
+        </div>
+
+        <div class="terms-section" id="about-mission">
+            <h2>2. About Our Mission</h2>
+            <p>Sahil's Dog Feeding Mission is a <span class="highlight">personal initiative</span> run by Sahil Karni to feed stray and shelter dogs in our local community. This is not a registered charity or formal organization - it's a grassroots effort driven by compassion for animals.</p>
+            <p><strong>What we do:</strong></p>
+            <ul>
+                <li>Prepare and distribute daily meals to stray dogs</li>
+                <li>Provide direct care and feeding to dogs in need</li>
+                <li>Share updates and stories of the dogs we help</li>
+                <li>Accept donations to support our feeding efforts</li>
+            </ul>
+            <p><strong>What we are NOT:</strong></p>
+            <ul>
+                <li>A registered non-profit organization</li>
+                <li>A veterinary service</li>
+                <li>A dog rescue or adoption center</li>
+                <li>A professional animal welfare organization</li>
+            </ul>
+        </div>
+
+        <div class="terms-section" id="donations">
+            <h2>3. Donations and Payments</h2>
+            <p>All donations are <span class="highlight">voluntary and non-refundable</span>. When you make a donation, you understand and agree that:</p>
+            <ul>
+                <li>Donations are gifts made voluntarily to support our dog feeding mission</li>
+                <li>You will not receive goods or services in exchange for your donation</li>
+                <li>Donations are final and cannot be refunded unless there was a processing error</li>
+                <li>You are responsible for any fees charged by your payment provider</li>
+                <li>We may not be able to provide tax-deductible receipts as we are not a registered charity</li>
+            </ul>
+            <p><strong>Payment Security:</strong> We use secure payment processors, but we are not responsible for any issues with third-party payment services.</p>
+        </div>
+
+        <div class="terms-section" id="use-of-funds">
+            <h2>4. Use of Funds</h2>
+            <p>We are committed to transparency about how your donations are used:</p>
+            <p><strong>100% of donations go directly to:</strong></p>
+            <ul>
+                <li>Purchasing dog food and treats</li>
+                <li>Basic veterinary supplies when needed</li>
+                <li>Transportation costs for feeding rounds</li>
+                <li>Emergency medical care for dogs when possible</li>
+            </ul>
+            <p><strong>We do NOT use donations for:</strong></p>
+            <ul>
+                <li>Personal expenses or salaries</li>
+                <li>Administrative costs</li>
+                <li>Marketing or advertising</li>
+                <li>Website maintenance</li>
+            </ul>
+            <p>While we strive for complete transparency, as a personal mission (not a formal organization), we may not provide detailed financial reports but will share updates on our social media about how funds are being used.</p>
+        </div>
+
+        <div class="terms-section" id="website-use">
+            <h2>5. Website Use</h2>
+            <p>You agree to use our website responsibly and legally. You may NOT:</p>
+            <ul>
+                <li>Use the website for any illegal purposes</li>
+                <li>Attempt to hack, damage, or disrupt the website</li>
+                <li>Post harmful, offensive, or inappropriate content</li>
+                <li>Spam or send unwanted communications</li>
+                <li>Violate any applicable laws or regulations</li>
+            </ul>
+            <p>We reserve the right to block access to users who violate these terms.</p>
+        </div>
+
+        <div class="terms-section" id="privacy">
+            <h2>6. Privacy and Data</h2>
+            <p>We respect your privacy and handle your information carefully:</p>
+            <ul>
+                <li>We collect minimal personal information (name, email, payment details for donations)</li>
+                <li>We do not sell or share your information with third parties</li>
+                <li>We may use your email to send updates about our mission (you can unsubscribe anytime)</li>
+                <li>Payment information is processed securely through third-party providers</li>
+            </ul>
+            <p>For detailed information about data handling, please see our Privacy Policy.</p>
+        </div>
+
+        <div class="terms-section" id="intellectual-property">
+            <h2>7. Intellectual Property</h2>
+            <p>All content on this website, including photos, text, logos, and design, belongs to Sahil Karni or is used with permission. You may:</p>
+            <ul>
+                <li>Share our content on social media to support our mission</li>
+                <li>Link to our website</li>
+            </ul>
+            <p>You may NOT:</p>
+            <ul>
+                <li>Copy our content for commercial use</li>
+                <li>Claim our photos or content as your own</li>
+                <li>Use our content to misrepresent our mission</li>
+            </ul>
+        </div>
+
+        <div class="terms-section" id="disclaimers">
+            <h2>8. Disclaimers</h2>
+            <div class="warning-box">
+                <strong>Important Disclaimers:</strong>
+            </div>
+            <p><strong>No Warranties:</strong> Our website and services are provided "as is" without any warranties. We make no guarantees about:</p>
+            <ul>
+                <li>Website availability or functionality</li>
+                <li>Accuracy of information</li>
+                <li>Specific outcomes for dogs we help</li>
+            </ul>
+            <p><strong>Not Professional Advice:</strong> We are not veterinarians or animal care professionals. Any information we share is based on personal experience only.</p>
+            <p><strong>Personal Mission:</strong> This is a personal initiative, not a professional organization. We operate with good intentions but cannot guarantee professional standards.</p>
+        </div>
+
+        <div class="terms-section" id="limitation-liability">
+            <h2>9. Limitation of Liability</h2>
+            <p>To the fullest extent permitted by law, Sahil Karni and Sahil's Dog Feeding Mission shall not be liable for:</p>
+            <ul>
+                <li>Any direct, indirect, or consequential damages</li>
+                <li>Loss of data or information</li>
+                <li>Website downtime or technical issues</li>
+                <li>Third-party payment processing problems</li>
+                <li>Any issues arising from our dog feeding activities</li>
+            </ul>
+            <p>Your use of our website and services is at your own risk.</p>
+        </div>
+
+        <div class="terms-section" id="communications">
+            <h2>10. Communications</h2>
+            <p>By providing your email address, you consent to receive:</p>
+            <ul>
+                <li>Updates about our dog feeding mission</li>
+                <li>Thank you messages for donations</li>
+                <li>Occasional newsletters with photos and stories</li>
+                <li>Important notices about changes to our terms</li>
+            </ul>
+            <p>You can unsubscribe from our emails at any time by clicking the unsubscribe link or contacting us directly.</p>
+        </div>
+
+        <div class="terms-section" id="changes">
+            <h2>11. Changes to Terms</h2>
+            <p>We may update these Terms and Conditions from time to time. When we do:</p>
+            <ul>
+                <li>We'll post the updated terms on this page</li>
+                <li>We'll update the "Last Updated" date at the top</li>
+                <li>For significant changes, we may send an email notification</li>
+                <li>Continued use of our website means you accept the new terms</li>
+            </ul>
+            <p>We encourage you to review these terms periodically.</p>
+        </div>
+
+        <div class="terms-section" id="contact">
+            <h2>12. Contact Information</h2>
+            <div class="contact-info">
+                <p><strong>Questions about these Terms?</strong></p>
+                <p>Please contact us at:</p>
+                <ul>
+                    <li><i class="fas fa-envelope"></i> Email: sahil@dogfeeding.org</li>
+                    <li><i class="fas fa-phone"></i> Phone: (555) 123-WOOF</li>
+                    <li><i class="fas fa-clock"></i> Response time: Within 24 hours</li>
+                </ul>
+                <p>We personally respond to every inquiry and are happy to clarify any questions about our terms or mission.</p>
+            </div>
+        </div>
+
+        <div class="retro-box">
+            <h2><span class="blink">♥</span> Thank You! <span class="blink">♥</span></h2>
+            <p>Thank you for taking the time to read our Terms and Conditions. Your support and understanding help us continue our mission to feed hungry dogs every day.</p>
+            <p>Every donation, no matter how small, makes a real difference in a dog's life. Together, we can ensure no dog goes to sleep hungry!</p>
+            <div style="text-align: center; margin-top: 20px;">
+                <a href="index.html" class="btn"><i class="fas fa-heart"></i> Support Our Mission</a>
+            </div>
+        </div>
+
+        <div class="back-to-top">
+            <i class="fas fa-arrow-up"></i>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 Sahil Karni's Dog Feeding Mission</p>
+        <p><i>Made with ♥ for dogs everywhere</i></p>
+        <p><a href="index.html" style="color: var(--secondary-color);">← Back to Main Site</a></p>
+        <div style="margin-top: 15px;">
+            <a href="#" style="color: var(--secondary-color); margin: 0 10px;">Privacy Policy</a> |
+            <a href="#" style="color: var(--secondary-color); margin: 0 10px;">Contact Us</a> |
+            <a href="#" style="color: var(--secondary-color); margin: 0 10px;">FAQ</a>
+        </div>
+    </footer>
+
+    <script>
+        // Back to top button functionality
+        const backToTopButton = document.querySelector('.back-to-top');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.add('visible');
+            } else {
+                backToTopButton.classList.remove('visible');
+            }
+        });
+        
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Highlight current section in table of contents
+        const sections = document.querySelectorAll('.terms-section');
+        const tocLinks = document.querySelectorAll('.toc a');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                
+                if (window.pageYOffset >= sectionTop - 200) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            tocLinks.forEach(link => {
+                link.style.color = 'var(--secondary-color)';
+                if (link.getAttribute('href') === '#' + current) {
+                    link.style.color = 'var(--primary-color)';
+                    link.style.fontWeight = 'bold';
+                }
+            });
+        });
+
+        // Add some interactivity to warning boxes
+        const warningBoxes = document.querySelectorAll('.warning-box');
+        warningBoxes.forEach(box => {
+            box.addEventListener('mouseenter', () => {
+                box.style.transform = 'scale(1.02)';
+                box.style.transition = 'transform 0.3s ease';
+            });
+            
+            box.addEventListener('mouseleave', () => {
+                box.style.transform = 'scale(1)';
+            });
+        });
+    </script>
+</body>
+</html>
